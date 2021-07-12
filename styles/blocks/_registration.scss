@@ -1,0 +1,93 @@
+.registration {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+  & .form {
+    font-size: 16px;
+    font-weight: lighter;
+    max-width: 360px;
+
+    & h5 {
+      font-size: 16px;
+      font-weight: lighter;
+    }
+
+    & label {
+      display: block;
+      margin-top: 20px;
+      color: #a4a4a4;
+
+      & span {
+        margin-left: 10px;
+        margin-right: 20px;
+      }
+    }
+
+    &__field {
+      width: 360px;
+      height: 45px;
+      font-size: 13px;
+      padding: 16px;
+      &::placeholder {
+        opacity: 40%;
+      }
+    }
+
+    &__radio {
+      border-color: #a4a4a4;
+      margin-top: 16px;
+      margin-bottom: 32px;
+    }
+
+    p {
+      color: #b1b1b1;
+      margin-top: 16px;
+      font-size: 13px;
+    }
+    & button {
+      margin-top: 40px;
+      background-color: $mainColor;
+      color: #fff;
+      padding: 16px 30px;
+      border: none;
+      & svg {
+        margin-left: 20px;
+        color: #fff;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__perks {
+    max-width: 58%;
+    font-size: 24px;
+    font-weight: lighter;
+    & h3 {
+      font-weight: lighter;
+      margin-bottom: 21px;
+    }
+    & p {
+      margin-bottom: 21px;
+    }
+    & .list {
+      list-style: none;
+      list-style-image: url(../../img/check.svg);
+      //   list-style-position: inside;
+
+      li:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    // ul li:before {
+    //   content: "";
+    //   background-image: url(/img/check.svg);
+    //   width: 20px;
+    //   height: 20px;
+    // }
+  }
+}
