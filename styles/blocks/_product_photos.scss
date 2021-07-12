@@ -1,0 +1,129 @@
+.product {
+  &__cards {
+    margin-bottom: 128px;
+  }
+  &__photos {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 64px;
+
+    & svg {
+      background: rgba(42, 42, 42, 0.15);
+      padding: 13px 17px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:active path {
+        fill: $mainColor;
+      }
+    }
+  }
+
+  &__wrap {
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    z-index: 1;
+    padding: 64px 0;
+    margin-top: -64px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 641px;
+
+    & h4 {
+      color: $mainColor;
+      font-size: 14px;
+      font-weight: lighter;
+    }
+
+    & .hr_top {
+      color: #ef5b70;
+      background-color: #ef5b70;
+      border: 0;
+      height: 3px;
+      width: 64px;
+      margin: 12px;
+    }
+
+    & h3 {
+      color: #4d4d4d;
+      font-size: 18px;
+      font-weight: lighter;
+      margin-bottom: 48px;
+    }
+
+    & p {
+      color: #5e5e5e;
+      font-size: 14px;
+      text-align: center;
+      font-weight: lighter;
+      margin-bottom: 32px;
+    }
+
+    & .price {
+      color: #ef5b70;
+      font-size: 24px;
+    }
+
+    & .hr_bottom {
+      color: #5e5e5e;
+      background-color: #5e5e5e;
+      border: 0;
+      height: 1px;
+      width: 100%;
+      margin: 65px;
+      opacity: 25%;
+    }
+
+    & .choose {
+      display: flex;
+      color: #6f6e6e;
+
+      & details {
+        &:not(:last-child) {
+          margin-right: 23px;
+        }
+        & summary {
+          list-style: none;
+
+          & .fa {
+            margin-left: 9px;
+          }
+        }
+      }
+    }
+
+    & .btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 49px;
+
+      & button {
+        background-color: transparent;
+        border: 1px solid #ff6a6a;
+        padding: 10px 20px 10px 10px;
+        color: #f26376;
+        font-size: 14px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+
+        & span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
